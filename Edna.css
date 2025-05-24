@@ -1,0 +1,115 @@
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #001f3f; 
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: left;
+    }
+
+    .sadrzaj {
+      max-width: 800px;
+      width: 100%;
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+      padding: 20px;
+    }
+
+    .lijevi-dio {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 220px;
+    }
+
+    .slika {
+      width: 200px;
+      height: 225px;
+      background-color: #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .slika img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .cv-download {
+      margin-top: 15px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .cv-dugme {
+      background-color: #00aced;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+
+    .cv-dugme:hover {
+      background-color: #0084b4;
+    }
+
+    .desni-dio {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ime {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .opis p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 25px;
+    }
+
+    .linkovi {
+      display: flex;
+      gap: 25px;
+    }
+
+    .linkovi a {
+      color: #00aced;
+      font-size: 28px;
+      transition: color 0.3s;
+    }
+
+    .linkovi a:hover {
+      color: #1da1f2;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        height: auto;
+        padding: 20px;
+      }
+      .sadrzaj {
+        flex-direction: column;
+        align-items: center;
+      }
+      .lijevi-dio, .desni-dio {
+        width: 100%;
+        text-align: center;
+      }
+      .linkovi {
+        justify-content: center;
+      }
+    }
