@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galerija | Odbrana diplomskog</title>
+
+  <link rel="stylesheet" href="Edna.css" />
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+      color: #333;
+    }
+
+    .galerija-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .galerija-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .galerija-container img:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Galerija sa odbrane diplomskog</h1>
+
+  <div class="galerija-container">
+    <a href="slike/slika1.jpg" data-lightbox="galerija" data-title="Slika 1">
+      <img src="slike/slika1.jpg" alt="Slika 1" />
+    </a>
+    <a href="slike/slika2.jpg" data-lightbox="galerija" data-title="Slika 2">
+      <img src="slike/slika2.jpg" alt="Slika 2" />
+    </a>
+    <a href="slike/slika3.jpg" data-lightbox="galerija" data-title="Slika 3">
+      <img src="slike/slika3.jpg" alt="Slika 3" />
+    </a>
+    <a href="slike/slika4.jpg" data-lightbox="galerija" data-title="Slika 4">
+      <img src="slike/slika4.jpg" alt="Slika 4" />
+    </a>
+    <a href="slike/slika5.jpg" data-lightbox="galerija" data-title="Slika 5">
+      <img src="slike/slika5.jpg" alt="Slika 5" />
+    </a>
+    <a href="slike/slika6.jpg" data-lightbox="galerija" data-title="Slika 6">
+      <img src="slike/slika6.jpg" alt="Slika 6" />
+    </a>
+    <a href="slike/slika7.jpg" data-lightbox="galerija" data-title="Slika 7">
+      <img src="slike/slika7.jpg" alt="Slika 7" />
+    </a>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+  <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,           
+      'fadeDuration': 300,
+      'imageFadeDuration': 300,
+      'alwaysShowNavOnTouchDevices': true,
+      'positionFromTop': 50,
+      'disableScrolling': true
+    });
+  </script>
+
+</body>
+</html>

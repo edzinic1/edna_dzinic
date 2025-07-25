@@ -96,6 +96,16 @@
       color: #1da1f2;
     }
 
+    .linkovi i.fa-graduation-cap {
+  color: #6a1b9a; 
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.linkovi i.fa-graduation-cap:hover {
+  color: #ab47bc; 
+}
+
     @media (max-width: 600px) {
       body {
         height: auto;
